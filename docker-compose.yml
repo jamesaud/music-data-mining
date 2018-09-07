@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  jupyter:
+    build:
+      context: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ./code:/home/jovyan/code
+    environment:
+      - JUPYTER_LAB_ENABLE=yes
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+        - ./db:/data/db
