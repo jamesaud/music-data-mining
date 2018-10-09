@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
 RUN python -m nltk.downloader punkt stopwords wordnet vader_lexicon
-
+RUN apt-get install python-pydot -y

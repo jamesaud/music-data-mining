@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  jupyter:
+  jupyter1:
     build:
       context: .
     ports:
@@ -10,6 +10,30 @@ services:
       - ./code:/home/jovyan/code
     environment:
       - JUPYTER_LAB_ENABLE=yes
+    command: jupyter notebook --NotebookApp.token= --allow-root
+  
+  jupyter2:
+    build:
+      context: .
+    ports:
+      - 8889:8888
+    volumes:
+      - ./code:/home/jovyan/code
+    environment:
+      - JUPYTER_LAB_ENABLE=yes
+    command: jupyter notebook --NotebookApp.token= --allow-root
+
+  jupyter3:
+    build:
+      context: .
+    ports:
+      - 8890:8888
+    volumes:
+      - ./code:/home/jovyan/code
+    environment:
+      - JUPYTER_LAB_ENABLE=yes
+    command: jupyter notebook --NotebookApp.token= --allow-root
+
 
   mongo:
     image: mongo:latest
