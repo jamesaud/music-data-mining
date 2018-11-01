@@ -7,4 +7,4 @@ seaborn==0.9.0
 spotipy==2.4.4
 pydotplus==2.0.2
 tqdm==4.26.0
-plotly==
+plotly==3.3.0
