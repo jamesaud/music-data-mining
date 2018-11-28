@@ -8,3 +8,4 @@ spotipy==2.4.4
 pydotplus==2.0.2
 tqdm==4.26.0
 plotly==3.3.0
+keras==2.2.4
