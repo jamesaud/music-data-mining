@@ -2,6 +2,8 @@
 
 This is not well documented. Most of the code exists in Jupyter notebooks if you want to clone the repository and read through them
 
+Machine learning to do song rank prediction. I.e. given a song, predict what its rank on the charts will be! Also, genre prediction and interesting search algorithms are explored!
+
 ## Results
 
 Check out the final presentation for predicting song ranking: 
