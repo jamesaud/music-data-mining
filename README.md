@@ -1,4 +1,4 @@
-# Short but Brief
+# Brief Overview
 
 This is not well documented. Most of the code exists in Jupyter notebooks if you want to clone the repository and read through them
 
